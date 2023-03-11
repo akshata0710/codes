@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int M;
+	printf("enter value for M:");
+	scanf("%d",&M);
+	if(M%15==0)
+	{
+		printf("GOOD NUMBER");
+	}
+	else if(M%3==0)
+	{
+		printf("BAD  NUMBER");
+	}
+	else if(M%5==0)
+	{
+		printf("POOR NUMBER");
+		
+	}
+	else  if(M%3!=0 && M%5!=0)
+	{
+		printf("-1");
+	}
+	return 0;
+}
