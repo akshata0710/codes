@@ -1,25 +1,24 @@
 #include<stdio.h>
 int main()
 {
-	int M;
-	printf("enter value for M:");
-	scanf("%d",&M);
-	if(M%15==0)
+	int num,a,rev=0,rem;
+	printf("enter any number:");
+	scanf("%d",&num);
+	num=a;
+	while(num>0)
 	{
-		printf("GOOD NUMBER");
+		rem=num%10;
+		rev=rev*10+rem;
+		num=num/10;
 	}
-	else if(M%3==0)
+	if(num==rev)
 	{
-		printf("BAD  NUMBER");
-	}
-	else if(M%5==0)
-	{
-		printf("POOR NUMBER");
+		printf("Given number is a palindrome");
 		
 	}
-	else  if(M%3!=0 && M%5!=0)
+	else
 	{
-		printf("-1");
+		printf("Given number is not a palindrome");
 	}
 	return 0;
 }
